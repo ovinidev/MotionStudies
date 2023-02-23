@@ -1,0 +1,58 @@
+#text {
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+    transform: translate(300px, 0) scale(1);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  60% {
+    transform: translate(-200px, -200px) scale(1);
+  }
+  65% {
+    transform: translate(-200px, -200px) scale(0.8);
+  }
+  70% {
+    transform: translate(-200px, -200px) scale(1);
+  }
+  100% {
+    transform: translate(-0, -200px) scale(1);
+  }
+}
+
+#cursor {
+  animation: cursor 5s ease infinite alternate;
+  transform-origin: center center; // referência ser ele mesmo
+  transform-box: fill-box; // se comportar como uma caixa preenchida
+}
+
+@keyframes box {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  68% {
+    opacity: 0;
+  }
+  70%,
+  100% {
+    opacity: 1;
+  }
+}
+
+#box {
+  animation: box 5s ease infinite alternate;
+}

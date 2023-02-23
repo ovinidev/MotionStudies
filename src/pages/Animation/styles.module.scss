@@ -1,0 +1,13 @@
+@keyframes animate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#react {
+  animation: animate 5s ease infinite;
+  transform-origin: 50% 50%;
+}
